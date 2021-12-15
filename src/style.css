@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* following code is used to reset the default css props */
+
+/*1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Montserrat, 'Courier New', Courier, monospace;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+/* Typographic tweaks! 4. Add accessible line-height 5. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* setting the html size to 62.5% */
+html {
+    font-size: 62.5%;
+}
+
+/* style guide */
+h2, .txt-lg {
+    font-size: 2.4rem;
+}
+
+h3, .txt-md {
+    font-size: 1.8rem;
+}
+
+h4, p, .txt-reg {
+    font-size: 1.6rem;
+}
+
+h5, .txt-sm {
+    font-size: 1.4rem;
+}
+
+h6, .txt-xs {
+    font-size: 1.2rem;
+}
+
+/* some generics utility classes */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-end {
+    justify-content: end;
+}
+.jc-c {
+    justify-content: center;
+}
+
+.as-start {
+    align-self: flex-start;
+}
+.as-end {
+    align-self: flex-end;
+}
+.as-c {
+    align-self: center;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.gap-26 {
+    grid-gap: 2.6rem; 
+}
+
+.gap-16 {
+    grid-gap: 1.6rem; 
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.weight-300 {
+    font-weight: 300;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.mt-32 {
+    margin-top :3.2rem;
+}
+
+.mt-24 {
+    margin-top :2.4rem;
+}
+
+.mt-12 {
+    margin-top :1.2rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* classes for components */
+nav {
+    background: #F5F5F5;
+    padding: 4rem 7.6rem 4rem 3.6rem;
+    height: 10rem;
+    border-bottom: 1px solid #C8CDD8;
+}
+
+.user-name-dropdown {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 14%;
+    max-width: 80rem;
+    /* background: #eee; */
+    height: 100%;
+}
+
+.logo {
+    border-right: 1px solid #6B7488;
+    padding-right: 2.6rem;
+}
+
+.icon-search {
+    margin-right: auto;
+    padding-left: 2.6rem;
+}
+
+.profile-section {
+    padding: 2.2rem .4rem 0 1.6rem;
+}
+
+.txt-gray {
+    color: #6B7488;
+}
+
+.profile-pic {
+    border: 1px solid #A2001D;
+    border-radius: 100%;
+    padding: .2rem;
+}
+
+.dropdown {
+    padding: .4rem;
+    border: 1px solid #C7CDD8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-research-field {
+    transform: translate(0, -2.4rem);
+}
+.tabs {
+    grid-gap: 1rem;
+    justify-content: start;
+}
+
+.tabs .item {
+    padding: .8rem 2.4rem;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.tabs .is-active {
+    border-bottom: 2px solid #A2001D;
+    font-weight: 500;
+}
+
+.tab-content {
+    padding: 0 .8rem .8rem;
+}
+
+.opinion {
+    padding: 4rem;
+}
+
+.comments-wrapper {
+    background: #fbfbfb;
+    padding: 2.4rem;
+    margin-top: .8rem;
+}
+
+.comments-group {
+    margin-top: 10rem;
+}
+
+.comment-avatar {
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+.name-with-comment {
+    background: rgba(239, 242, 248, 60%);
+    width: 100%;
+    padding: .6rem 1.4rem;
+}
+
+.date {
+    border-left: 1px solid #6B7488;
+    padding-left: 0.8rem;
+}
+
+.comment-input {
+    width: 100%;
+    display: block;
+    border-radius: 4rem;
+    outline: none;
+    border: 0;
+    border: 1px solid gray;
+    font-size: 1.4rem;
+    padding: 1.4rem 2.4rem;
+}
+
+.comment-box {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 600px;
+    height: 560px;
+    max-width: 100%;
+    border: 1px solid #439EF1;
+    right: 10rem;
+    bottom: 1rem;
+    display: none;
+}
+
+.comment-box .comment-box-header {
+    background: #F5F7FB;
+    padding: 1.6rem 1.8rem;
+}
+.comment-box .comment-box-body {
+    padding: 1.8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2.4rem;
+}
+
+.comment-box-footer {
+    background: #F5F7FB;
+    padding: 1.6rem 4rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.number-of-posts:focus ~ .comment-box {
+    display: block;
+}
+
+.prog-bar {
+    height: 2rem;
+    width: 14rem;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}

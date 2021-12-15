@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Science Map</title>
+  </head>
+
+  <body style="background: #fafafa">
+    <nav class="flex jc-sb">
+      <img class="logo" src="/assets/logo.png" alt="" />
+      <img class="icon-search" src="/assets/icon-search.svg" alt="asdf" />
+      <div class="flex gap-26">
+        <div class="flex">
+          <img
+            style="padding-right: 2rem"
+            src="/assets/icon-bell.svg"
+            alt="notification icon"
+          />
+          <img
+            style="border-left: 1px solid #6b7488; padding-left: 2rem"
+            src="/assets/icon-user.svg"
+            alt="user icon"
+          />
+        </div>
+        <div class="flex jc-sb gap-16 user-name-dropdown">
+          <p class="txt-gray txt-md">Jack S</p>
+          <img src="/assets/icon-down.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <img src="/assets/img-header.png" alt="" />
+
+      <div class="profile-section flex jc-sb">
+        <img class="as-start" src="/assets/icon-left.svg" alt="" />
+        <div class="flex jc-end text-align-end gap-26">
+          <div>
+            <p class="txt-lg weight-500">✭ Marcus Huber</p>
+            <p class="txt-reg txt-gray weight-500">IQOQI Vienna</p>
+            <p class="txt-reg txt-gray weight-500">Atominstitute TU-Vienna</p>
+          </div>
+          <img class="profile-pic" src="/assets/img-profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <!-- <select class="dropdown dropdown-research-field txt-reg" name="" id="">
+        <option value="Research fields">Research Fields</option>
+        <option value="Research fields">Research Fields</option>
+        <option value="Research fields">Research Fields</option>
+        <option value="Research fields">Research Fields</option>
+        <option value="Research fields">Research Fields</option>
+      </select> -->
+
+      <div class="tabs flex mt-24">
+        <p class="item is-active">Publications (33)</p>
+        <p class="item">Research Fields (3)</p>
+        <p class="item">Contributions (43)</p>
+        <!-- <p class="item">More</p> -->
+      </div>
+
+      <div class="tab-content" style="background: #fff">
+        <div class="opinion">
+          <h3>Infinite projective measurments have infinite resource costs</h3>
+          <div class="text-align-end ">
+            <div class="achievements txt-gray">
+              <p class="txt-sm weight-300">
+                Y Gormenic Matthew Earson John Semp Quantum 4(222) 2020
+              </p>
+            </div>
+            <p style="color: #2F79CE;" class="txt-md mt-32">
+              The role of Quantum information in Thermodynamics
+            </p>
+          </div>
+        </div>
+
+        <div class="comments-wrapper">
+          <div class="flex jc-sb">
+            <div style="max-width: 48.5rem">
+              <p>
+                <span class="weight-600">is critisized by: </span> Is Energy
+                releasing something that is more important
+              </p>
+              <div class="text-align-end mt-32">
+                <p class="txt-sm txt-gray weight-300">
+                  John Semp . Quantum 4 (222) 2020
+                </p>
+                <p class="txt-sm italic">
+                  We experimantally relied on something that is important
+                </p>
+              </div>
+            </div>
+
+            <div>bar</div>
+          </div>
+
+          <div class="comment-with-profile-pic flex jc-start gap-16 mt-24">
+            <img
+              class="comment-avatar"
+              src="/assets/img-profile-pic.png"
+              alt=""
+            />
+            <div class="name-with-comment">
+              <p class="txt-sm weight-600">
+                Marcus Huber
+                <span class="date txt-xs weight-500 txt-gray">2 Jan 2020</span>
+              </p>
+              <p class="txt-sm weight-500 txt-gray">
+                Is energy releasing something that is important
+              </p>
+            </div>
+          </div>
+
+          <div class="flex jc-end gap-26 txt-gray mt-24">
+            <img src="/assets/icon-comments.svg" alt="icon for comments" />
+            <p class="txt-xs">23 Postings</p>
+          </div>
+        </div>
+        <div class="comments-wrapper">
+          <div class="flex jc-sb">
+            <div style="max-width: 48.5rem">
+              <p>
+                <span class="weight-600">is critisized by: </span> Is Energy
+                releasing something that is more important
+              </p>
+              <div class="text-align-end mt-32">
+                <p class="txt-sm txt-gray weight-300">
+                  John Semp . Quantum 4 (222) 2020
+                </p>
+                <p class="txt-sm italic">
+                  We experimantally relied on something that is important
+                </p>
+              </div>
+            </div>
+
+            <div class="flex" style="max-width: 30rem;">
+                <progress class="prog-bar rotate-180" value="90" max="100"> 32% </progress>
+                <progress class="prog-bar prog-bar-left " value="90" max="100"> 32% </progress>
+            </div>
+          </div>
+
+          <div class="comment-with-profile-pic flex jc-start gap-16 mt-24">
+            <img
+              class="comment-avatar"
+              src="/assets/img-profile-pic.png"
+              alt=""
+            />
+            <input
+              id="comment-input"
+              placeholder="Write a comment"
+              class="comment-input"
+              type="text"
+            />
+          </div>
+
+          <div class="comment-box">
+            <div class="comment-box-header flex jc-start gap-16">
+              <img src="/assets/icon-comment-box.svg" alt="" />
+              <p class="weight-500">100 Comments</p>
+            </div>
+            <div class="comment-box-body">
+              <div class="comment-with-profile-pic">
+                <div class="flex jc-start gap-16">
+                  <img
+                    class="comment-avatar"
+                    src="/assets/img-profile-pic.png"
+                    alt=""
+                  />
+                  <div class="name-with-comment">
+                    <p class="txt-sm weight-600">
+                      Marcus Huber
+                      <span class="date txt-xs weight-500 txt-gray"
+                        >2 Jan 2020</span
+                      >
+                    </p>
+                    <p class="txt-sm weight-500 txt-gray">
+                      Is energy releasing something that is important
+                    </p>
+                  </div>
+                </div>
+                <div class="flex jc-end gap-26 mt-12">
+                  <span class="txt-xs weight-500">Like</span>
+                  <span class="txt-xs weight-500">Reply</span>
+                </div>
+              </div>
+              <div class="comment-with-profile-pic flex as-end gap-16">
+                <img
+                  class="comment-avatar"
+                  src="/assets/img-profile-pic.png"
+                  alt=""
+                />
+                <div class="name-with-comment">
+                  <p class="txt-sm weight-600">
+                    Marcus Huber
+                    <span class="date txt-xs weight-500 txt-gray"
+                      >2 Jan 2020</span
+                    >
+                  </p>
+                  <p class="txt-sm weight-500 txt-gray">
+                    Is energy releasing something that is important
+                  </p>
+                </div>
+              </div>
+              <div class="comment-with-profile-pic flex as-end gap-16">
+                <img
+                  class="comment-avatar"
+                  src="/assets/img-profile-pic.png"
+                  alt=""
+                />
+                <div class="name-with-comment">
+                  <p class="txt-sm weight-600">
+                    Marcus Huber
+                    <span class="date txt-xs weight-500 txt-gray"
+                      >2 Jan 2020</span
+                    >
+                  </p>
+                  <p class="txt-sm weight-500 txt-gray">
+                    Is energy releasing something that is important
+                  </p>
+                </div>
+              </div>
+  
+              <div class="comment-with-profile-pic">
+                <div class="flex jc-start gap-16">
+                  <img
+                    class="comment-avatar"
+                    src="/assets/img-profile-pic.png"
+                    alt=""
+                  />
+                  <div class="name-with-comment">
+                    <p class="txt-sm weight-600">
+                      Marcus Huber
+                      <span class="date txt-xs weight-500 txt-gray"
+                        >2 Jan 2020</span
+                      >
+                    </p>
+                    <p class="txt-sm weight-500 txt-gray">
+                      Is energy releasing something that is important
+                    </p>
+                  </div>
+                </div>
+                <div class="flex jc-end gap-26 mt-12">
+                  <span class="txt-xs weight-500">Like</span>
+                  <span class="txt-xs weight-500">Reply</span>
+                </div>
+              </div>
+            </div>
+            <div class="comment-box-footer">
+              <div class="flex jc-start gap-16">
+                <img
+                  class="comment-avatar"
+                  src="/assets/img-profile-pic.png"
+                  alt=""
+                />
+                <input
+                  placeholder="Write a comment"
+                  class="comment-input"
+                  type="text"
+                />
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="flex jc-end gap-26 txt-gray mt-24 number-of-posts">
+            <img src="/assets/icon-comments.svg" alt="icon for comments" />
+            <p class="txt-xs">23 Postings</p>
+          </div>
+        </div>
+
+        
+      </div>
+    </main>
+  </body>
+</html>
