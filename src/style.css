@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
 /* following code is used to reset the default css props */
 
@@ -7,7 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: Montserrat, 'Courier New', Courier, monospace;
+  font-family: Montserrat, "Courier New", Courier, monospace;
 }
 /* 2. Remove default margin */
 * {
@@ -57,262 +57,353 @@ h6 {
 
 /* setting the html size to 62.5% */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* style guide */
-h2, .txt-lg {
-    font-size: 2.4rem;
+h2,
+.txt-lg {
+  font-size: 1.8rem;
 }
 
-h3, .txt-md {
-    font-size: 1.8rem;
+h3,
+.txt-md {
+  font-size: 1.4rem;
 }
 
-h4, p, .txt-reg {
-    font-size: 1.6rem;
+h4,
+p,
+.txt-reg {
+  font-size: 1.2rem;
 }
 
-h5, .txt-sm {
-    font-size: 1.4rem;
+h5,
+.txt-sm {
+  font-size: 1.1rem;
 }
 
-h6, .txt-xs {
-    font-size: 1.2rem;
+h6,
+.txt-xs {
+  font-size: 0.9rem;
 }
 
-/* some generics utility classes */
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* some generic utility classes */
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
 }
 
 .jc-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 .jc-sb {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .jc-end {
-    justify-content: end;
+  justify-content: end;
 }
 .jc-c {
-    justify-content: center;
+  justify-content: center;
 }
 
 .as-start {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 .as-end {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 .as-c {
-    align-self: center;
+  align-self: center;
 }
 
-
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .gap-26 {
-    grid-gap: 2.6rem; 
+  grid-gap: 2.6rem;
 }
 
 .gap-16 {
-    grid-gap: 1.6rem; 
+  grid-gap: 1.6rem;
 }
 
 .text-align-end {
-    text-align: end;
+  text-align: end;
 }
 
 .weight-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .weight-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .weight-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .mt-32 {
-    margin-top :3.2rem;
+  margin-top: 3.2rem;
 }
 
 .mt-24 {
-    margin-top :2.4rem;
+  margin-top: 2.4rem;
 }
 
 .mt-12 {
-    margin-top :1.2rem;
+  margin-top: 1.2rem;
 }
 
 .italic {
-    font-style: italic;
-}
-
-/* classes for components */
-nav {
-    background: #F5F5F5;
-    padding: 4rem 7.6rem 4rem 3.6rem;
-    height: 10rem;
-    border-bottom: 1px solid #C8CDD8;
-}
-
-.user-name-dropdown {
-    cursor: pointer;
-}
-
-.container {
-    margin: 0 14%;
-    max-width: 80rem;
-    /* background: #eee; */
-    height: 100%;
-}
-
-.logo {
-    border-right: 1px solid #6B7488;
-    padding-right: 2.6rem;
-}
-
-.icon-search {
-    margin-right: auto;
-    padding-left: 2.6rem;
-}
-
-.profile-section {
-    padding: 2.2rem .4rem 0 1.6rem;
+  font-style: italic;
 }
 
 .txt-gray {
-    color: #6B7488;
-}
-
-.profile-pic {
-    border: 1px solid #A2001D;
-    border-radius: 100%;
-    padding: .2rem;
-}
-
-.dropdown {
-    padding: .4rem;
-    border: 1px solid #C7CDD8;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-.dropdown-research-field {
-    transform: translate(0, -2.4rem);
-}
-.tabs {
-    grid-gap: 1rem;
-    justify-content: start;
-}
-
-.tabs .item {
-    padding: .8rem 2.4rem;
-    font-weight: 300;
-    cursor: pointer;
-    font-size: 1.8rem;
-}
-
-.tabs .is-active {
-    border-bottom: 2px solid #A2001D;
-    font-weight: 500;
-}
-
-.tab-content {
-    padding: 0 .8rem .8rem;
-}
-
-.opinion {
-    padding: 4rem;
-}
-
-.comments-wrapper {
-    background: #fbfbfb;
-    padding: 2.4rem;
-    margin-top: .8rem;
-}
-
-.comments-group {
-    margin-top: 10rem;
-}
-
-.comment-avatar {
-    height: 3.6rem;
-    width: 3.6rem;
-}
-
-.name-with-comment {
-    background: rgba(239, 242, 248, 60%);
-    width: 100%;
-    padding: .6rem 1.4rem;
-}
-
-.date {
-    border-left: 1px solid #6B7488;
-    padding-left: 0.8rem;
-}
-
-.comment-input {
-    width: 100%;
-    display: block;
-    border-radius: 4rem;
-    outline: none;
-    border: 0;
-    border: 1px solid gray;
-    font-size: 1.4rem;
-    padding: 1.4rem 2.4rem;
-}
-
-.comment-box {
-    position: fixed;
-    bottom: 0;
-    background: #fff;
-    width: 600px;
-    height: 560px;
-    max-width: 100%;
-    border: 1px solid #439EF1;
-    right: 10rem;
-    bottom: 1rem;
-    display: none;
-}
-
-.comment-box .comment-box-header {
-    background: #F5F7FB;
-    padding: 1.6rem 1.8rem;
-}
-.comment-box .comment-box-body {
-    padding: 1.8rem 4rem;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 2.4rem;
-}
-
-.comment-box-footer {
-    background: #F5F7FB;
-    padding: 1.6rem 4rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-}
-
-.number-of-posts:focus ~ .comment-box {
-    display: block;
-}
-
-.prog-bar {
-    height: 2rem;
-    width: 14rem;
+  color: #6b7488;
 }
 
 .rotate-180 {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* classes for components */
+
+/* Header/navigation bar at top */
+nav {
+  background: #f5f5f5;
+  padding: 2.4rem 2.6rem;
+  height: 7rem;
+  border-bottom: 1px solid #c8cdd8;
+}
+
+.logo {
+  border-right: 1px solid #6b7488;
+  padding-right: 2.6rem;
+}
+
+.user-name-dropdown {
+  cursor: pointer;
+}
+
+.icon-search {
+  margin-right: auto;
+  padding-left: 2.6rem;
+}
+
+/* main container layout divided into 2 columns */
+/* 1 for main thred */
+/* 2 for comment box which opens up when click on profile and corresponding comment */
+.container {
+  margin: 0 auto;
+  max-width: 103.8rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1.6rem;
+  /* background: #eee; */
+  height: 100%;
+}
+
+.profile-section {
+  padding: 2.2rem 0.4rem 0 1.6rem;
+}
+
+.profile-pic {
+  border: 1px solid #a2001d;
+  border-radius: 100%;
+  padding: 0.2rem;
+}
+
+.dropdown {
+  padding: 0.4rem;
+  border: 1px solid #c7cdd8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-research-field {
+  transform: translate(0, -2.4rem);
+}
+
+/* tabs and tab content  */
+.tabs {
+  grid-gap: 1rem;
+  justify-content: start;
+}
+
+.tabs .item {
+  padding: 0.8rem 2.4rem;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.tabs .is-active {
+  border-bottom: 2px solid #a2001d;
+  font-weight: 500;
+}
+
+.tab-content {
+  padding: 0 0.8rem 0.8rem;
+}
+
+/* main opinion on research */
+.opinion {
+  padding: 3rem;
+}
+
+.comments-wrapper {
+  background: #fbfbfb;
+  padding: 1.8rem 2rem;
+  margin-top: 0.8rem;
+}
+
+.comments-group {
+  margin-top: 10rem;
+}
+
+.comment-avatar {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.name-with-comment {
+  background: rgba(239, 242, 248, 60%);
+  width: 100%;
+  padding: 0.6rem 1.4rem;
+}
+
+.date {
+  border-left: 1px solid #6b7488;
+  padding-left: 0.8rem;
+}
+
+/* placeholder for right column comment box */
+.comment-box-placeholder {
+  width: 44.2rem;
+  max-width: 100%;
+}
+
+/* actual comment box which opens up on right side */
+.comment-box-column {
+  position: sticky;
+  bottom: 1.6rem;
+}
+
+/* input field style for comment */
+.comment-input {
+  width: 100%;
+  display: block;
+  border-radius: 4rem;
+  outline: none;
+  border: 0;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  padding: 1rem 1.6rem;
+}
+
+.comment-box {
+  background: #fff;
+  width: 44.2rem;
+  max-width: 100%;
+  border: 1px solid #439ef1;
+}
+
+.comment-box .comment-box-header {
+  background: #f5f7fb;
+  padding: 1.2rem 1.2rem;
+}
+.comment-box .comment-box-body {
+  padding: 1.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.4rem;
+}
+
+.comment-box-footer {
+  background: #f5f7fb;
+  padding: 1.2rem 3rem;
+}
+
+/* progress bar for votes - customization */
+
+.progress-container {
+  width: 100%;
+  height: 1.5rem;
+  position: relative;
+  background-color: #f1f1f1;
+  border: 1px solid rgba(222, 159, 35, 0.4);
+}
+
+.progressbar {
+  background-color: #757575;
+  height: 100%;
+  position: absolute;
+  line-height: inherit;
+}
+
+.b-radius-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.b-radius-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.upvotes-bg {
+  background: #6c2121;
+}
+
+.downvotes-bg {
+  background: #9c8888;
+}
+
+.upvotes-color {
+  color: #6c2121;
+}
+
+.downvotes-color {
+  color: #9c8888;
+}
+
+.vote-btn {
+  border-radius: 50px;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid rgba(236, 236, 236, 1);
+}
+
+.is-upvoted {
+  background: #6c2121;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.2rem 0.5rem;
+}
+
+.is-downvoted {
+  background: #9c8888;
+}
+
+.is-upvoted *,
+.is-downvoted * {
+  color: #fff;
 }
