@@ -50,10 +50,13 @@
         <option value="Research fields">Research Fields</option>
       </select> -->
 
-            <div class="tabs flex mt-24">
-                <p class="item is-active">Publications (33)</p>
-                <p class="item">Research Fields (3)</p>
-                <p class="item">Contributions (43)</p>
+            <div class="tabs-and-filter-container mt-24 flex jc-sb">
+                <div class="tabs flex ">
+                    <p class="item is-active">Publications (33)</p>
+                    <p class="item">Research Fields (3)</p>
+                    <p class="item">Contributions (43)</p>
+                </div>
+                <button class="flex filter-btn">Filter <img src="/assets/icon-filter.svg" alt=""></button>
             </div>
 
             <div class="tab-content" style="background: #fff">
@@ -63,8 +66,11 @@
                     </h3>
                     <div class="text-align-end">
                         <div class="achievements txt-gray">
-                            <p class="txt-sm weight-300">
-                                Y Gormenic Matthew Earson John Semp Quantum 4(222) 2020
+                            <p class="txt-sm weight-300 tags">
+                                <span class="tag">Y Gormenic</span>
+                                <span class="tag">Matthew Earson</span>
+                                <span class="tag">John Semp </span>
+                                <span class="tag">Quantum 4(222) 2020</span>
                             </p>
                         </div>
                         <p style="color: #2f79ce" class="txt-md mt-32">
@@ -81,9 +87,11 @@
                                 releasing something that is more important
                             </p>
                             <div class="text-align-end mt-32">
-                                <p class="txt-sm txt-gray weight-300">
-                                    John Semp . Quantum 4 (222) 2020
+                                <p class="txt-sm weight-300 tags txt-gray">
+                                    <span class="tag">John Semp</span>
+                                    <span class="tag">Quantum 4 (222) 2020</span>
                                 </p>
+
                                 <p class="txt-sm italic">
                                     We experimantally relied on something that is important
                                 </p>
@@ -125,7 +133,7 @@
                         </a>
                     </div>
 
-                    <div class="flex jc-end gap-26 txt-gray mt-24">
+                    <div class="flex jc-end gap-16 txt-gray mt-24">
                         <img src="/assets/icon-comments.svg" alt="icon for comments" />
                         <p class="txt-xs">23 Postings</p>
                     </div>
@@ -138,8 +146,9 @@
                                 releasing something that is more important
                             </p>
                             <div class="text-align-end mt-32">
-                                <p class="txt-sm txt-gray weight-300">
-                                    John Semp . Quantum 4 (222) 2020
+                                <p class="txt-sm weight-300 tags txt-gray">
+                                    <span class="tag">John Semp</span>
+                                    <span class="tag">Quantum 4 (222) 2020</span>
                                 </p>
                                 <p class="txt-sm italic">
                                     We experimantally relied on something that is important
@@ -174,7 +183,7 @@
                         <input id="comment-input" placeholder="Write a comment" class="comment-input" type="text" />
                     </div>
 
-                    <div class="flex jc-end gap-26 txt-gray mt-24 number-of-posts">
+                    <div class="flex jc-end gap-16 txt-gray mt-24 number-of-posts">
                         <img src="/assets/icon-comments.svg" alt="icon for comments" />
                         <p class="txt-xs">23 Postings</p>
                     </div>
@@ -185,9 +194,14 @@
         <section class="comment-box-column as-end">
             <!-- comment box starts -->
             <div class="comment-box">
-                <div class="comment-box-header flex jc-start gap-16">
-                    <img src="/assets/icon-comment-box.svg" alt="" />
-                    <p class="weight-500">100 Comments</p>
+                <div class="comment-box-header flex jc-sb ">
+                    <div class="flex gap-16">
+                        <img src="/assets/icon-comment-box.svg" alt="" />
+                        <p class="weight-500">100 Comments</p>
+                    </div>
+                    <div style="transform: rotate(45deg); font-weight: 600; font-size: 1.8rem;">
+                        <a href="/src/index.html">+</a>
+                    </div>
                 </div>
                 <div class="comment-box-body">
                     <div class="comment-with-profile-pic">
@@ -251,7 +265,7 @@
                             <span class="txt-xs weight-500">Reply</span>
                         </div>
                     </div>
-                    <a href="" style="text-align: right">View moere comments</a>
+                    <a href="" style="text-align: right">View more comments</a>
                 </div>
                 <div class="comment-box-footer">
                     <div class="flex jc-start gap-16">
